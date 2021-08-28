@@ -1,2 +1,2 @@
-# NastyaZakharova.github.io
+# Анастасия Захарова
 Мой первый сайт
