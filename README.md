@@ -1,2 +1,2 @@
-# Nastya-Zakharova.github.io
+# NastyaZakharova.github.io
 Мой первый сайт
