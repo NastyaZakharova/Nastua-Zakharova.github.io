@@ -1,0 +1,44 @@
+body{
+  font-family: Arial, sans-serif;  
+}
+
+
+/*шапка*/
+nav{
+    width: 1920px;
+    height: 60px;
+    background-color: #344051;
+}
+
+.logo{
+    float: left;
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+}
+
+.menu{
+    float: left;
+    padding-left: 425px;
+}
+
+.menu li{
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+
+/*главный блок*/
+.Main{
+    width: 1920px;
+    height: 1017px;
+    background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 986px 106px/824px 908px no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) 0px 0px/cover no-repeat;
+    
+}
+
+
