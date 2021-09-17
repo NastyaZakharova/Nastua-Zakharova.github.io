@@ -1,0 +1,17 @@
+.wrapper{
+    height: 100vh;
+}
+.parallax-img{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    margin: 0;
+    
+}
+.parallax-img{
+    background-image: url('chrome://branding/content/about-logo.png');
+}
