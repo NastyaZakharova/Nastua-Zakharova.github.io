@@ -20,6 +20,7 @@ nav{
     padding-left: 388px;
     opacity: 0;
     
+    
     -webkit-animation: coming 1.5s 2s ease forwards;
     -moz-animation: coming 1.5s 2s ease forwards;
     -o-animation: coming 1.5s 2s ease forwards;
@@ -144,6 +145,7 @@ main{
     font-weight: bold;
     font-size: 60px;
      color: #2c384a;
+   font-family: 'Roboto', sans-serif;
 }
 
 .Title_container h4{

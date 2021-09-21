@@ -1,17 +1,13 @@
-.wrapper{
-    height: 100vh;
-}
-.parallax-img{
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 body{
-    margin: 0;
-    
+    margin: 30px;
+    font-size: 30px;
 }
-.parallax-img{
-    background-image: url('chrome://branding/content/about-logo.png');
+
+body h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+span{
+    font-family: 'Roboto', sans-serif;
 }

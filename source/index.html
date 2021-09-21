@@ -12,8 +12,15 @@
     <title>Cайт-визитка</title>
     
     <link rel="stylesheet" href="css/reset.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
+    
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     
      <link rel="stylesheet" href="css/loader.css">
     
 </head>
@@ -41,7 +48,7 @@
   
   
    <!-- главный блок --> 
-  <main> 
+  
         <section class="Main">
       <div class="Title_container">
           <h1>Привет <br>Я Андрей Браун</h1>
@@ -50,7 +57,7 @@
           <input type="button", value="Мои работы">
       </div>
             </section>
-   </main>
+  
     
    <!-- блок обо мне -->
   <section class="About_me">
@@ -249,7 +256,7 @@
       
       <div class="Contacts_write">
       <form action="">
-          <input type="text", name="Name", placeholder="Имя", class="Name" required autocomplete="on" pattern="[A-Za-zА-Яа-яЁё]">
+          <input type="text", name="Name", placeholder="Имя", class="Name" required autocomplete="on" pattern="^[A-Za-zА-Яа-яЁё]+$">
           <input type="email", name="Email", placeholder="Email", class="Email" autocomplete="on" required>
           <textarea name="Message" id="" cols="10" rows="10", placeholder="Сообщение", class="Message"></textarea>
           <input type="submit", value="Отправить", class="Button">
