@@ -8,21 +8,19 @@
     <meta name="robots", content="index">
     
     <meta property="og:">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Cайт-визитка</title>
     
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
     
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
      
-     <link rel="stylesheet" href="css/loader.css">
-    
+    <link rel="stylesheet" href="css/loader.css"> 
 </head>
 
 
@@ -32,31 +30,60 @@
     <!-- шапка -->
     <header>
         <nav>
-            <div class="logo">Андрей Браун</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-3 offset-lg-2 d-lg-block d-none">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Обо мне</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Кейсы</a></li>
+                            <li><a href="#">Прайс</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                    <!-- мобильное меню -->
+                    <div class="nav col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle white-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Навигация
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                    <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                    <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                    <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                    <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    
+                </div>
             </div>
         </nav>
     </header>
   
   
    <!-- главный блок --> 
-  
-        <section class="Main">
-      <div class="Title_container">
-          <h1>Привет <br>Я Андрей Браун</h1>
-          <h4>Фулл стек веб-разработчик</h4>
-          <input type="button", value="Обо мне">
-          <input type="button", value="Мои работы">
-      </div>
-            </section>
+    <section class="Main">
+        <div class="container h-100"><div class="row align-items-center h-100">
+            <div class="col-lg-6 mt-5 pt-5"> 
+                <div class="Title_container mt-5 pt-5">
+                    <h1>Привет <br>Я Андрей Браун</h1>
+                    <h4>Фулл стек веб-разработчик</h4>
+                    <input type="button", value="Обо мне">
+                    <input type="button", value="Мои работы">
+                </div>
+            </div>
+        </div></div>
+    </section>
   
     
    <!-- блок обо мне -->
@@ -276,7 +303,7 @@
   
   </footer>
   
-    
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

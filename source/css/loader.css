@@ -23,7 +23,7 @@
   100% { transform: rotate(360deg); }
 }
 
-nav, main{
+nav, .Main{
     z-index: 1;
   position: relative;
 
@@ -31,7 +31,10 @@ nav, main{
 }
 
 @keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+  from{ bottom:-100px; opacity:0; } 
+  to{ bottom:0px; opacity:1; }
 }
 
+nav{
+    z-index: 2;
+}

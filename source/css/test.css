@@ -1,13 +1,16 @@
-
-body{
-    margin: 30px;
-    font-size: 30px;
+/* шрифт FrGot
+@font-face {
+  font-family: 'FranklinGot';
+  src: local('FranklinGot'),
+	   url('../fonts/framd.woff2') format('woff2'), 
+	   url('../fonts/framd.woff') format('woff'),
+	   url('../fonts/framd.ttf') format('ttf'),
+	   url('../fonts/framd.eot') format('eot'),
+	   url('../fonts/framd.otf') format('otf'),
+	   url('../fonts/framd.svg') format('svg');
 }
-
 body h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FranklinGot';
 }
+*/
 
-span{
-    font-family: 'Roboto', sans-serif;
-}
