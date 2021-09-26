@@ -9,6 +9,50 @@
 	   url('../fonts/framd.svg') format('svg');
 }
 
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+	   url('../fonts/calibri.woff2') format('woff2'), 
+	   url('../fonts/Calibri.woff') format('woff'),
+	   url('../fonts/Calibri.ttf') format('ttf'),
+	   url('../fonts/calibri.eot') format('eot'),
+	   url('../fonts/Calibri.otf') format('otf'),
+	   url('../fonts/Calibri.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: local('Bahnschrift'),
+	   url('../fonts/Bahnschrift.woff2') format('woff2'), 
+	   url('../fonts/Bahnschrift.woff') format('woff'),
+	   url('../fonts/Bahnschrift.ttf') format('ttf'),
+	   url('../fonts/Bahnschrift.eot') format('eot'),
+	   url('../fonts/Bahnschrift.otf') format('otf'),
+	   url('../fonts/Bahnschrift.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: local('Myriad-Pro'),
+	   url('../fonts/Myriad-Pro.woff2') format('woff2'), 
+	   url('../fonts/Myriad-Pro.woff') format('woff'),
+	   url('../fonts/Myriad-Pro.ttf') format('ttf'),
+	   url('../fonts/Myriad-Pro.eot') format('eot'),
+	   url('../fonts/Myriad-Pro.otf') format('otf'),
+	   url('../fonts/Myriad-Pro.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Calibri-Bold';
+  src: local('Calibri-Bold'),
+	   url('../fonts/Calibri-Bold.woff2') format('woff2'), 
+	   url('../fonts/Calibri-Bold.woff') format('woff'),
+	   url('../fonts/Calibri-Bold.ttf') format('ttf'),
+	   url('../fonts/Calibri-Bold.eot') format('eot'),
+	   url('../fonts/Calibri-Bold.otf') format('otf'),
+	   url('../fonts/Calibri-Bold.svg') format('svg');
+}
+
 body{
   font-family: 'FranklinGot', sans-serif;  
 }
@@ -45,6 +89,11 @@ nav{
     opacity: 0;
     animation: coming 1.5s 2.5s ease forwards;
 }
+
+.nav li a:active{
+    background-color:  #344051;
+    color: white;
+} 
 
 .menu{
     float: left;
@@ -245,7 +294,7 @@ main{
         right: 0;
         position: absolute;
         background: rgba(0,0,0,0.4);
-        z-index: 1;
+        z-index: -1;
     }
     .Title_container{
     -webkit-animation: main_move 1s 3s ease forwards;
@@ -253,24 +302,32 @@ main{
     -o-animation: main_move 1s 3s ease forwards;
     animation: main_move 1s 3s ease forwards;
 }
+}
+
 
 
 /*блок обо мне*/
 .About_me{
     width: 100%;
-    height: 60%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .About_me_head h1{
     color: #263244;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 90px; 
-     padding-bottom: 30px;
-    width: 100%;
-   
+}
+.About_me_head{
+    margin-top: 4%;
+}
+
+.About_me_head h1{
     -webkit-animation: tada 2s infinite;
     -moz-animation: tada 2s infinite;
    -o-animation: tada 2s infinite;
@@ -278,7 +335,6 @@ main{
      }
 
 .cherta img{
-    margin-left: 48.3%;
     -webkit-animation: cherta 1.3s infinite alternate;
     -moz-animation: cherta 1.3s infinite alternate;
     -o-animation: cherta 1.3s infinite alternate;
@@ -290,11 +346,14 @@ main{
     to{
         opacity: 1; }
 }
-
 .About_me_Photo img{
-    height: 200px;
-    margin-top: 55px;
-    margin-left: 45%;
+    height: 100%;
+}
+.About_me_Photo{
+    height: 30%;
+}
+.About_me_Photo{
+    margin-top: 2%;
 }
 .About_me_Photo img:hover{
     -webkit-animation: wobble 4s ease infinite running;
@@ -305,22 +364,26 @@ main{
 
 .About_me_information >p{
     text-align: justify;
-    margin: 25px 590px;
     color: #3f495a;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'Calibri', sans-serif;
+    line-height: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .About_me_summary input{
-     height: 40px;
+    height: 40px;
+    width: 180px;
     border: 2px solid #6f707e;
     border-radius: 5px;
     background: none;
     color: #6f707e;
      font-size: 15px;
-    padding: 0px 20px 0px 30px;
-    margin: 10px 875px;
      font-weight: 500;
-     background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) no-repeat 10px 11px;
+    background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) no-repeat 10px 11px;
     
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -336,6 +399,42 @@ main{
     color: black;
 }
 
+@media (max-width:1400px){
+    .About_me_head h1{
+    font-size: 25px;
+}
+.About_me_head{
+    margin-top: 4%;
+}
+    .About_me_Photo{
+    margin-top: 1%;
+}
+    .About_me_information >p{
+    margin-bottom: 2%;
+}
+    .About_me_summary input{
+    height: 35px;
+    width: 170px;
+    background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) no-repeat 10px 9px;
+}
+}
+
+@media (max-width:992px){
+.About_me_head{
+    margin-top: 5%;
+}
+     .About_me_summary input{
+    margin-top: 5%;
+}
+}
+
+@media (max-width:576px){
+.About_me_Photo{
+    height: 20%;
+}
+}
+
+
 
 /*блок что я умею*/
 .Skills{
@@ -346,159 +445,197 @@ main{
 
 .Skills_head h1{
      color: #263244;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    padding-top: 90px;
-    padding-bottom: 30px;
     
      -webkit-animation: tada 2s infinite;
      -moz-animation: tada 2s infinite;
-   -o-animation: tada 2s infinite;
-   animation: tada 2s infinite;
-}
-
-.Skills_img{
-    margin-top: 90px;
-    margin-left: 485px;
+     -o-animation: tada 2s infinite;
+     animation: tada 2s infinite; 
 }
 
 .Skills_img img{
-    display: inline-block;
-    margin-right: 237px;
-   width: 57px;
+   width: 65%;
     
     -webkit-animation: flipInY 3s infinite alternate;
     -moz-animation: flipInY 3s infinite alternate;
     -o-animation: flipInY 3s infinite alternate;
-    animation: flipInY 3s infinite alternate;
+    animation: flipInY 3s infinite alternate; 
 }
-
-.Skills_information1{
-     margin-top: 35px;
-    margin-left: 475px;
-    margin-right: 20px;
+.Skills_img {
+    margin-top: -1%;
 }
 
 .Skills_information1 > h4{
-    float: left;
-     margin-right: 200px;
    color: #cf7600;
     font-weight: 600;
-    font-size: 15px;
-}
-
-.Skills_information2{
-    margin-top: 60px;
-    margin-left: 417px;
+    font-size: 17px;
+    font-family: 'Bahnschrift', sans-serif;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .Skills_information2 > p{
-    float: left;
-   width: 210px;
     text-align: center;
-    margin-right: 85px;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 500;
+    padding: 0% 10%;
+    line-height: 15px;
 }
-
 .Skills_information2 p:hover::first-letter{
     color: #eb7800;
     font-weight: bold;
 }
 
+@media(max-width:1400px){
+    .Skills_head h1{
+        font-size: 25px;}
+    .Skills_information1 > h4{
+    margin-top: 5%;
+    font-size: 15px;}
+    .Skills_information2 > p{
+        font-size: 15px;}
+    .Skills_img {
+    margin-top: -1%;}
+}
+
+@media(max-width:992px){
+  .Skills_img img{
+      width: 85%;} 
+    .Skills_img {
+        margin-top: -5%;}
+}
+
+@media(max-width:768px){
+    .Skills_head h1{
+        margin-top: -10%;}
+    .Skills_img img{
+      width: 100%;} 
+    .Skills_img {
+        margin-top: -15%;}
+    .Skills_information1 > h4{
+    margin-top: -10%;}
+    .Skills_information2 > p{
+    margin-top: -5%;}
+}
+
+@media(max-width:576px){
+    .Skills_head h1{
+        margin-top: -5%;}
+    .Skills_img img{
+      width: 20px;}
+    .Skills_img {
+        margin-top: -25%;}
+    .Skills_information1 > h4{
+    margin-top: -35%;
+    font-size: 14px;}
+    .Skills_information2 > p{
+    margin-top: -10%;
+    line-height: 14px;
+    font-size: 13px;}
+}
+
+/* Для iPhoneX*/
+@media(max-width:400px){
+    .Skills_head h1{
+        margin-top: -23%;}
+    .Skills_img img{
+      width: 20px;}
+    .Skills_img {
+        margin-top: -50%;}
+    .Skills_information1 > h4{
+    margin-top: -90%;
+    font-size: 14px;}
+    .Skills_information2 > p{
+    margin-top: -45%;
+    line-height: 14px;
+    font-size: 13px;}
+}
+
+
+
 /*блок кейсы*/
 .Cases{
     width: 100%;
     height: 100%;
-    background: url(../img/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80.jpg) no-repeat 7px 230px/80% 75%;
+}
+
+.Cases_gen_info{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
 }
 
 .Cases_head h1{
      color: #263244;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    padding-top: 90px;
-    padding-bottom: 30px;
+    margin-top: 45%;
     
      -webkit-animation: tada 2s infinite;
      -moz-animation: tada 2s infinite;
    -o-animation: tada 2s infinite;
-   animation: tada 2s infinite;
+   animation: tada 2s infinite; 
 }
 
+.Cases_information {
+   width: 100%; 
+    margin-top: 1%;
+}
 .Cases_information p{
     text-align: center;
     color: #586170;
-    margin-top: 35px;
-    margin-bottom: 35px;
      font-weight: 500;
     font-size: 15px;
+    font-family: 'Calibri', sans-serif;
+    padding: 0% 28%;
 }
 
-.Cases_example1 {
-    margin-top: 570px;
-    margin-left: 385px;
+.Cases_img img{
+    height: 500px;
+}
+.Cases_img1{
+    width: 100%;
 }
 
 .Cases_example1 h3{
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 19px;
     text-transform: uppercase;
     color: #384354;
 }
-
 .Cases_example1 p{
-    font-size: 12px;
-    padding: 10px 0px 8px 0px;
+    font-size: 14px;
     color: #3f495a;
+    font-family: 'Calibri', sans-serif;
+    line-height: 14px;
     
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
 }
-
 .Cases_example1 p:active{color: red;}
 
-.Cases_example2{
-    margin-top: -96px;
-    margin-left: 670px;
-    margin-right: 395px;
-}
-
-.Cases_example2 h3{
-    font-weight: 600;
-    font-size: 16px;
-    color: #384354;
-}
-
-.Cases_example2 p{
-     line-height: 20px;
-     font-size: 15px;
-    text-align: justify;
-    font-weight:normal;
-    color: #3f495a;
-}
-
 .Cases_button input{
-    margin-top: 50px;
-    margin-left: 385px;
     background-color: #63b5ae;
     color: #fff;
-    text-transform: uppercase;
-    padding: 10px 40px;
-     font-weight: bold;
     border: 1px solid #63b5ae;
     border-radius: 5px;
-    letter-spacing: 0.3px;
+    padding: 9px 35px;
+    font-size: 17px;
+    font-family: 'Myriad-Pro', sans-serif;
     
     transition: all 0.2s;
     transform: scale(1),
 }
-
 .Cases_button input:active{
     transform: scale(1.1);
 }
@@ -506,46 +643,116 @@ main{
     color: black;
 }
 
+.Cases_example2 h3{
+    font-weight: 500;
+    font-size: 19px;
+    color: #384354;
+}
+.Cases_example2 p{
+     line-height: 20px;
+     font-size: 16px;
+    color: #3f495a;
+    font-family: 'Calibri', sans-serif;
+    text-align: justify;
+}
+
+@media(max-width:1400px){
+    .Cases_head h1{
+        font-size: 25px;
+        margin-top:0;}
+    .Cases_information {
+    margin-top: 1%;}
+    .Cases_gen_info{
+    height: 20%;}
+    .Cases_information p{
+    font-size: 14px;}
+    .Cases_img img{
+    height: 400px;}
+    .Cases_example1 h3{
+    font-size: 18px;}
+    .Cases_example1 p{
+    font-size: 13px;
+    color: #3f495a;}
+    .Cases_button input{
+    padding: 7px 25px;
+    font-size: 16px;}
+    .Cases_example2 h3{
+    font-size: 18px;}
+    .Cases_example2 p{
+     line-height: 18px;
+     font-size: 15px;}
+}
+
+@media(max-width:992px){
+    .Cases_gen_info{
+    height: 18%;}
+    .Cases_head h1{
+        margin-top: 20%;}
+    .Cases_information p{
+    line-height: 15px;} 
+}
+
+@media(max-width:768px){
+   .Cases_img img{
+    height: 350px;} 
+}
+
+@media(max-width:768px){
+   .Cases_img img{
+    height: 300px;} 
+}
+
+
+
 /*блок прайс*/
 .Price{
      width: 100%;
-    height: 68%;
-    background: url(../img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png) no-repeat 490px 74%;
+    height: 75%;
+}
+
+.Price_min{
+    box-shadow: 5px 5px 20px #e1e1e1;
+    margin-top: 10%;
+    height: 550px;
 }
 
 .Price_head h1{
     text-align: center;
     font-size: 30px;
-    font-weight: bold;
-    margin-top: 135px;
+    font-weight: normal;
     color: #1c2534;
+    margin-top: 10px;
     
     -webkit-animation: zoomIn 2.5s ease infinite;
     -moz-animation: zoomIn 2.5s ease infinite;
     -o-animation: zoomIn 2.5s ease infinite;
-    animation: zoomIn 2.5s ease infinite;
+    animation: zoomIn 2.5s ease infinite; */
 }
 
 .Price_points  {
-    margin-top: 50px;
-    margin-left: 490px;
+    height: 290px;
+    margin-top: 10px;
 }
 
-.Price_points >h3{
+.Price_points h3{
     text-transform: uppercase;
-    padding-bottom: 20px;
-     font-weight: bold;
+     font-weight: normal;
     font-size: 20px;
      color: #1c2534;
+    line-height: 20px;
+    padding-top: 10px;
+   margin-bottom: -10px;
 }
 
 .Price_points select{
-    width: 63%;
-    margin-bottom: 40px;
+    width: 100%;
+    height: 75%;
     background: url(../img/%D0%93%D0%B0%D0%BB%D0%BA%D0%B0.png) no-repeat 97%, #eee;
     color: #838383;
     font-size: 14px;
-    padding: 20px 725px 15px 20px;
+    font-family: 'Calibri', sans-serif;
+    letter-spacing: 0.3px;
+    padding: 5px 725px 5px 20px;
     -moz-appearance: none;
     -webkit-appearance: none;
     
@@ -554,33 +761,136 @@ main{
     -o-transition: all 0.1s;
     transition: all 0.1s;
 }
-
 .Price_points select:hover{
     background-color:  #f4d3b2;
     color: black;
     font-weight: bold;
 } 
 
+.Linia{
+    height: 2px;
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 0;
+    background-color: #d2d2d2;
+}
+
+.Price_calc{
+    height: 60px;
+    margin-top: 40px;
+}
 .Price_calc h5{
-    margin-left: 490px;
-    margin-top: 15px;
-    font-weight: bold;
+    font-weight: normal;
      font-size: 15px;
     color: #1c2534;
+    line-height: 18px;
+    letter-spacing: 1px;
 }
-
-.Price_calc2{
-    margin-top: -50px;
-}
-
-.Price_calc2 > p{
-    float: left;
+.Price_calc p{
     color: #1c2534;
-     font-weight: bold;
-     font-size: 20px;
-    margin-left: 1365px;
-    margin-bottom: 5px;
+     font-weight: normal;
+     font-size: 18px;
+    line-height: 18px;
+    text-align: right;
 }
+
+.Price_button{
+    height: 80px;
+}
+.Price_button input{
+    background-color: #63b5ae;
+    color: #fff;
+    border: 1px solid #63b5ae;
+    border-radius: 5px;
+    padding: 9px 35px;
+    font-size: 17px;
+    font-family: 'Myriad-Pro', sans-serif;
+    margin-left: 20px;
+    
+    transition: all 0.2s;
+    transform: scale(1),
+}
+.Price_button input:active{
+    transform: scale(1.1);
+}
+.Price_button input:hover{
+    color: black;
+}
+
+@media(max-width:1400px){
+    .Price_min{
+    margin-top: 5%;
+    height: 480px;}
+    .Price_head h1{
+    font-size: 25px;
+    margin-top: 10px;}
+    .Price_points  {
+    height: 280px;}
+    .Price_points h3{
+    font-size: 18px;}
+    .Price_points select{
+    width: 100%;
+    padding: 5px 525px 5px 20px;}
+    .Price_calc{
+    height: 50px;
+    margin-top: 20px;}
+    .Price_calc h5{
+    line-height: 16px;}
+    .Price_button{
+    height: 55px;}
+    .Price_button input{
+        margin-left: 10px;}
+}
+
+@media(max-width:1200px){ 
+    .Price_points  {
+    height: 290px;}
+    .Price_points select{
+    width: 100%;
+    padding: 5px 425px 5px 20px;}
+    .Price_calc{
+    height: 50px;
+    margin-top: 15px;}
+    .Price_button input{
+        margin-left: 15px;}
+}
+
+@media(max-width:992px){
+    .Price_points select{
+    width: 100%;
+    padding: 5px 400px 5px 20px;}
+    .Price_calc{
+    height: 50px;
+    margin-top: 5px;}
+    .Price_button input{
+        margin-left: 5px;}
+}
+
+@media(max-width:768px){ 
+    .Price_points  {
+        margin-top: 0px;}
+     .Price_points h3{
+    font-size: 16px;}
+    .Price_points select{
+    width: 100%;
+    padding: 5px 325px 5px 20px;}
+    .Price_button input{
+        margin-left: -5px;}
+}
+
+@media(max-width:576px){
+    .Price_points h3{
+        letter-spacing: 0.5px;}
+    .Price_points select{
+    width: 100%;
+    padding: 5px 50px 5px 20px;}
+}
+
+@media(max-width:420px){
+    .Price_button input{
+        margin-left: -25px;}
+}
+
 
 
 /*блок статистка*/
@@ -590,45 +900,29 @@ main{
     background: url(../img/%D1%84%D0%BE%D0%BD_%D1%80%D1%83%D0%BA%D0%B8.jpg) no-repeat fixed center/100% 100%;
 }
 
+.Statistic_top{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Statistic_head h1{
     color: #323e4f;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    padding-top: 83px;
-    padding-bottom: 30px;
      
      -webkit-animation: tada 2s infinite;
      -moz-animation: tada 2s infinite;
    -o-animation: tada 2s infinite;
-   animation: tada 2s infinite;
-}
-
-.Statistic_1 {
-    margin-left: 23%;
-    margin-top: 70px;
-}
-
-.Statistic_2 {
-    margin-left: 38%;
-    margin-top: -134px;
-}
-
-.Statistic_3 {
-    margin-left: 53%;
-    margin-top: -134px;
-}
-
-.Statistic_4 {
-    margin-left: 68%;
-    margin-top: -134px;
+   animation: tada 2s infinite; */
 }
 
 .Statistic_general img{
-    height: 50px;
-    width: 55px;
-    margin-left: 58px;
+    height: 52px;
     
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -638,30 +932,68 @@ main{
     perspective: 400px;
     transform: scale3d(1, 1, 1);
 }
-
 .Statistic_general img:hover{
     transform: scale3d(1.5, 1.5, 2);
 }
 
 .Statistic_general h4{
     color: #323e4f;
-    font-size: 28px;
-    font-weight: bolder;
-    width: 170px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
-    margin-top: 25px;
+    font-family: 'Calibri-Bold', sans-serif; 
+    margin-top: 20px;
 }
 
 .Statistic_general p{
      color: #323e4f;
-    font-size: 13px;
-    font-weight: 600;
-    width: 170px;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
-    margin-top: 18px;
     text-transform: uppercase;
-    animation: zoomIn 3s cubic-bezier(0,1.12,.83,.67) infinite;
+    font-family: 'Calibri-Bold', sans-serif; 
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    animation: zoomIn 3s cubic-bezier(0,1.12,.83,.67) infinite; 
 }
+
+@media (max-width:1400px){
+  .Statistic_head h1{
+      font-size: 28px;}
+    .Statistic_general img{
+        height: 50px;}
+    .Statistic_general h4{
+    margin-top: 18px;}
+    .Statistic_general p{
+    margin-top: 5px;
+    font-size: 14px;}
+}
+@media (max-width:1200px){
+    .Statistic_head h1{
+      font-size: 25px;}
+    .Statistic_general p{
+    font-size: 13px;}
+}
+@media (max-width:992px){
+    .Statistic_general h4{
+    font-size: 30px;}
+
+}
+@media (max-width:768px){
+    .Statistic_general img{
+        height: 45px;}
+}
+@media (max-width:576px){
+    .Statistic_general img{
+        height: 45px;}
+    .Statistic_general h4{
+    margin-top: 15px;
+    font-size: 25px;}
+    .Statistic_general p{
+    margin-top: 5px;
+    font-size: 13px;}
+}
+
 
 
 /*блок отзывы*/
@@ -669,103 +1001,162 @@ main{
     width: 100%;
     height: 55%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .Reviews_head h1{
     color: #243042;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    padding-top: 90px;
-    padding-bottom: 30px;
+    margin-top: 30px;
     
      -webkit-animation: tada 2s infinite;
      -moz-animation: tada 2s infinite;
    -o-animation: tada 2s infinite;
-   animation: tada 2s infinite;
+   animation: tada 2s infinite; 
 }
 
+.Reviews_img{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 .Reviews_img img{
-    margin-top: 55px;
     height: 105px;
-    margin-left: 47%;
-    margin-bottom: 15px;
     position: relative;
 }
 .Reviews_img img:active{
-   top: 170px;
-    right: 190px;
+   top: 10px;
 }
 
+.Reviews_text{
+    width: 40%;
+}
 .Reviews_text p{
-    padding: 15px 616px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Calibri', sans-serif; 
+    letter-spacing: 0.3px;
 }
 
 .Reviews_tck{
-    margin: 22px 910px;
+    margin-top: 15px;
 }
-
 .Reviews_tck img{
     margin: 0px 5px 0px 5px;
     transition: all 0.2s;
      transform: scale(1);
 }
-
 .Reviews_tck img:hover{
     transform: scale(1.5);
 }
 
+@media (max-width:1400px){
+    .Reviews_head h1{
+        font-size: 25px;
+    margin-top: 15px;}
+    .Reviews_img{
+    margin-top: 20px;
+    margin-bottom: 20px;}
+    .Reviews_tck{
+    margin-top: 5px;}
+    .Reviews_text{
+    width: 45%;}
+}
+
+@media (max-width:1200px){
+    .Reviews_head h1{
+        margin-top: 5px;}
+    .Reviews_img{
+    margin-top: 15px;
+    margin-bottom: 15px;}
+}
+
+@media (max-width:992px){
+    .Reviews_text p{
+    font-size: 15px; 
+    line-height: 18px;}
+    .Reviews_img img{
+    height: 100px;}
+}
+
+@media (max-width:576px){
+    .Reviews_text{
+    width: 50%;}
+    .Reviews_head h1{
+        margin-top: 0px;}
+    .Reviews_tck{
+    margin-top: 0px;}
+}
+
+
 
 /*подвал*/
+
 /*блок контакты*/
 .Contacts {
     width: 100%;
-    height: 750px;
-  background: url(../img/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg) no-repeat 0px 0px/100% 100%;
+   height: 750px;
+  background: url(../img/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg) no-repeat center/cover;
+}
+
+.Contacts{
+        position: relative;
+        z-index: 1;
+    }
+.Contacts::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: -1;
+    }
+
+.Contacts_top{
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Contacts_head h1{
-    color: #fff;
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 30px;
+        color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    padding-top: 90px;
-    padding-bottom: 30px;
+    margin-top: 40%;
    
      -webkit-animation: tada 2s infinite;
      -moz-animation: tada 2s infinite;
    -o-animation: tada 2s infinite;
-   animation: tada 2s infinite;
+   animation: tada 2s infinite; */
 }
 
+.Contacts_text{
+    width: 33%;
+}
 .Contacts_text p{
-    color: #fff;
-    text-align: center;
     font-size: 15px;
-    margin: 30px 590px 40px 590px;
+    line-height: 15px;
+        color: #fff;
+    text-align: center;
     font-weight: 400;
-}
-
-.Contacts_1 {
-    margin-left: 33%;
-}
-.Contacts_2 {
-    margin-left: 45%;
-    margin-top: -69px;
-}
-.Contacts_3 {
-    margin-left: 57%;
-    margin-top: -51px;
+    font-family: 'Calibri', sans-serif; 
+    margin-top: 3%;
 }
 
 .Contacts_block img{
-    height: 23px;
-    margin-left: 75px;
-    margin-bottom: 10px;
+    height: 25px;
     
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -776,29 +1167,54 @@ main{
 .Contacts_block img:hover{
     transform: rotate(30deg);
 }
-
 .Contacts_block p{
-    color: #fff;
-    text-align: center;
-    width: 170px;
     line-height: 18px;
+    font-size: 15px;
+    font-family: 'Calibri', sans-serif;
     font-weight: 400; 
-    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .Contacts_link h2{
-    color: #fff;
-    font-size: 18px;
+    font-size: 19px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 55px 0px 45px 0px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.Contacts_write{
-    width: 750px;
-    margin-left: 590px;
+.Name{
+    color: #5d5d5e;
+    font-size: 14px;
 }
+
+.Email {
+    color: #5d5d5e;
+    font-size: 14px;
+}
+
+.Message{
+    height: 95px;
+    color: #5d5d5e;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.Button{
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    padding: 0px 20px;
+}
+
 .Contacts_write input:focus{
     border: 2px solid #eb7800;
     box-shadow: 0px 0px 8px #eb7800;
@@ -807,64 +1223,114 @@ main{
     border: 2px solid #eb7800;
     box-shadow: 0px 0px 8px #eb7800;
 }
-.Contacts_write input:last-child:hover{
+.Contacts_write .Button:hover{
     background-color: #eb7800;
     color: #001226;
     border-color: #eb7800;
 }
-.Name{
-    width: 350px;
-    margin: 0px 27px 10px 0px;
-    padding: 5px 0px 5px 10px;
-    color: #5d5d5e;
-    font-size: 13px;
-}
 
-.Email {
-    width: 350px;
-      padding: 5px 0px 5px 10px;
-    color: #5d5d5e;
-    font-size: 13px;
-}
-
-.Message{
-    width: 730px;
-      padding: 10px 0px 5px 10px;
-    height: 95px;
-    color: #5d5d5e;
-    font-size: 13px;
-}
-
-.Button{
-    background: none;
-    border: 3px solid #fff;
-    border-radius: 5px;
-    width: 125px;
-    height: 50px;
-    color: #fff;
+@media (max-width:1400px){
+   .Contacts {;
+   height: 575px;} 
+    .Contacts_head h1{
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 35%;}
+    .Contacts_text p{
+    font-size: 14px;
+        line-height: 14px;}
+    .Contacts_block img{
+        height: 22px;}
+    .Contacts_block p{
+    line-height: 16px;
+        font-size: 14px;}
+    .Contacts_link h2{
     font-size: 17px;
-    font-weight: 600;
-    margin: 25px 305px;
+    line-height: 17px;
+    margin-top: 15px;
+    margin-bottom: 25px;}
+    .Name{
+    font-size: 13px;}
+    .Email {
+    font-size: 13px;}
+    .Message{
+    height: 80px;
+    font-size: 13px;}
+    .Button{
+    height: 40px;
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0px 15px;
+    border: 2px solid #fff;}
 }
+@media (max-width:1200px){
+    .Contacts_head h1{
+    margin-top: 30%;}
+    .Contacts_top{
+    height: 30%;}
+    .Button{
+    margin-top: 18px;}
+}
+@media (max-width:992px){
+    .Contacts_text{
+    width: 35%;}
+    .Contacts_block img{
+    height: 20px;}
+    .Message{
+    height: 75px;}
+}
+
+@media (max-width:768px){
+    .Contacts_text{
+    width: 45%;}
+}
+
+@media (max-width:576px){
+    .Contacts_text{
+    width: 50%;}
+    .Contacts_head h1{
+    margin-top: 27%;}
+    .Contacts_top{
+    height: 27%;}
+    .Contacts_link h2{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;}
+}
+
+
 
 .Map{
    width: 100%;
     height: 300px; 
-    background: url(../img/%D0%9A%D0%B0%D1%80%D1%82%D0%B0%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg) no-repeat 0px 0px/100% 100%;
+    background: url(../img/%D0%9A%D0%B0%D1%80%D1%82%D0%B0%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Map>h3{
-    float: left;
+    font-size: 14px;
+     padding: 14px 25px;
+    font-family: 'Arial', sans-serif;
     border: 1px solid #fff;
     background-color: #fff;
-    width: 130px;
-    height: 43px;
-    margin: 120px 850px;
-    padding: 14px 30px;
+    width: 120px;
+    height: 40px;
     font-weight: 600;
     box-shadow: 1px 3px 10px #a8baa1;
     
     animation: pulse 1s infinite;
+}
+@media (max-width:1400px){
+    .Map{
+    height: 230px;}
+    .Map>h3{
+    font-size: 13px;
+        line-height: 13px;
+     padding: 14px 15px;
+    width: 100px;
+        height: 30px;}
 }
 
 .Copyright{
@@ -876,6 +1342,16 @@ main{
 .Copyright p{
     color: #fff;
     text-align: center;
-     line-height: 90px;
+    line-height: 90px;
     font-size: 12px;
+    font-family: 'Arial', sans-serif;
 }
+
+@media (max-width:1400px){
+    .Copyright{
+    height: 65px;}
+    .Copyright p{
+    line-height: 65px;
+    font-size: 11px;}
+}
+
