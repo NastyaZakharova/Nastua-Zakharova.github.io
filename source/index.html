@@ -115,7 +115,7 @@
 <section class="Skills">
 <div class="container h-100">
     
-    <div class="row h-50 align-items-center justify-content-center">
+    <div class="row Skills_top h-50 align-items-center justify-content-center">
         <div class="col-12">
             <div class="Skills_head">
                  <h1>Что я умею</h1>
@@ -124,51 +124,30 @@
         </div>     
     </div>
 
-    <div class="row justify-content-around align-items-center">
-        <div class="Skills_img text-center col-1">
-                  <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" class="rounded" alt="">
-        </div>
-        <div class="Skills_img text-center col-1">
+    
+        <div class="row Skills_bottom">
+            <div class="Skills_1 text-center col-lg-3 col-md-6 col-12">
+                 <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" class="rounded" alt="">
+                 <h4>Веб-дизайн</h4>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                  
+            </div>
+            <div class="Skills_2 text-center col-lg-3 col-md-6 col-12">
                   <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" class="rounded" alt="">
-        </div>
-        <div class="Skills_img text-center col-1">
+                  <h4>Разработка</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="Skills_3 text-center col-lg-3 col-md-6 col-12">
                   <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" class="rounded" alt="">
+                  <h4>CEO-Оптимизация</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="Skills_4 text-center col-lg-3 col-md-6 col-12">
+                  <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" class="rounded" alt=""> 
+                  <h4>Маркетинг</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
-        <div class="Skills_img text-center col-1">
-                  <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" class="rounded" alt="">
-        </div>
-    </div>    
 
-    <div class="row justify-content-around align-items-center">
-        <div class="Skills_information1 col-3">
-            <h4>Веб-дизайн</h4>
-        </div>
-        <div class="Skills_information1 col-3">
-            <h4>Разработка</h4>
-        </div>
-        <div class="Skills_information1 col-3">
-            <h4>CEO-Оптимизация</h4>
-        </div>
-        <div class="Skills_information1 col-3">
-            <h4>Маркетинг</h4>
-        </div>
-    </div>
-
-    <div class="row justify-content-around align-items-start">    
-        <div class="Skills_information2 col-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="Skills_information2 col-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="Skills_information2 col-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="Skills_information2 col-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-    </div>
-      
 </div>
 </section>
   
@@ -457,21 +436,25 @@
     <div class="container">
         <div class="Contacts_write">
             <form action=""> 
-
-              <div class="row justify-content-center">
-              <input type="text", name="Name", placeholder="Имя", class="Name col-lg-3 col-md-4 col-5" required autocomplete="on" pattern="^[A-Za-zА-Яа-яЁё]+$">
-              <input type="email", name="Email", placeholder="Email", class="Email col-lg-3 col-md-4 col-5 offset-lg-1 offset-1" autocomplete="on" required>
-              </div>
-
-              <div class="row justify-content-center">
-              <textarea name="Message" id="" cols="10" rows="10", placeholder="Сообщение", class="Message col-lg-7 col-md-9 col-11"></textarea>
-              </div>
-
-              <div class="row d-flex justify-content-center text-center">
-              <div class="col-lg-2 col-sm-3 col-5">
-              <input type="submit", value="Отправить", class="Button">
-                  </div>
-              </div>
+                
+                <div class="row g-3 justify-content-center">
+                      <div class="col-lg-4 col-5">
+                        <input type="text" class="form-control" name="Name" placeholder="Имя" aria-label="Имя" required autocomplete="on" pattern="^[A-Za-zА-Яа-яЁё]+$">
+                      </div>
+                      <div class="col-lg-4 col-5">
+                        <input type="email" class="form-control" name="Email" placeholder="Email" aria-label="Email" autocomplete="on" required>
+                      </div>
+                    
+                      <div class="col-lg-8 col-10">
+                        <textarea class="Message form-control" name="Message" placeholder="Сообщение" id="floatingTextarea"></textarea>
+                      </div>
+                </div>
+                
+                <div class="row d-flex justify-content-center text-center">
+                      <div class="col-lg-2 col-sm-3 col-5">
+                      <input type="submit", value="Отправить", class="Button">
+                      </div>
+                </div>
 
             </form>
         </div>
