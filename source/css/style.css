@@ -401,43 +401,40 @@ main{
 
 @media (max-width:1400px){
     .About_me_head h1{
-    font-size: 25px;
-}
-.About_me_head{
-    margin-top: 4%;
-}
+    font-size: 25px;}
+    .About_me_head{
+    margin-top: 4%;}
     .About_me_Photo{
-    margin-top: 1%;
-}
+    margin-top: 1%;}
     .About_me_information >p{
-    margin-bottom: 2%;
-}
+    margin-bottom: 2%;}
     .About_me_summary input{
     height: 35px;
     width: 170px;
-    background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) no-repeat 10px 9px;
-}
+    background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) no-repeat 10px 9px;}
 }
 
 @media (max-width:992px){
-.About_me_head{
-    margin-top: 5%;
-}
+    .About_me_head{
+    margin-top: 5%;}
      .About_me_summary input{
-    margin-top: 5%;
-}
+    margin-top: 5%;}
 }
 
 @media (max-width:576px){
-.About_me_Photo{
-    height: 20%;
-}
+    .About_me_Photo{
+    height: 20%;}
 }
 
 @media (max-width:400px){
-.About_me{
+    .About_me{
     height: 75%;}
 }
+@media (max-height:700px){
+    .About_me{
+    height: 90%;}
+}
+
 
 
 /*блок что я умею*/
@@ -563,6 +560,10 @@ main{
     line-height: 13px;}
     .Skills_bottom h4{
     font-size: 15px;}
+}
+@media(max-height:700px){
+    .Skills{
+        height: 90%;}
 }
 
 
@@ -727,8 +728,21 @@ main{
     .Cases_information p{
     padding: 0% 10%;}
 }
+@media (max-height:700px){
+    .Cases_example2 p{
+     line-height: 16px;
+     font-size: 13px;}
+    .Cases_head h1{
+        font-size: 20px;}
+    .Cases_gen_info{
+    height: 20%;}
+    .Cases_example1 h3{
+    font-size: 17px;}
+    .Cases_example2 h3{
+    font-size: 17px;}
+}
 
-
+    
 
 /*блок прайс*/
 .Price{
@@ -914,9 +928,15 @@ main{
 
 @media(max-width:420px){
     .Price_button input{
-        margin-left: -25px;}
+    margin-left: -25px;}
     .Price{
     height: 85%;}
+}
+@media(max-height:700px){
+    .Price{
+    height: 95%;}
+    .Price_min{
+        margin-top: 15%;}
 }
 
 
@@ -1026,7 +1046,10 @@ main{
 .Statistic {
     height: 50%;}
 }
-
+@media(max-height:700px){
+    .Statistic {
+    height: 55%;}
+}
 
 
 /*блок отзывы*/
@@ -1128,10 +1151,21 @@ main{
 }
 
 @media (max-width:400px){
-.Reviews {
+    .Reviews {
     height: 60%;}
     .Reviews_text{
     width: 70%;}
+}
+@media (max-height:700px){
+    .Reviews {
+    height: 70%;}
+    .Reviews_text p{
+    font-size: 14px; 
+    line-height: 16px;}
+    .Reviews_img img{
+        height: 95px;}
+    .Reviews_head h1{
+        font-size: 20px;}
 }
 
 
